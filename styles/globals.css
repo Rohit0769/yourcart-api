@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background: linear-gradient(
+      to bottom,
+      transparent,
+    )
+}
+
+.pallax{
+  background: url('/bg-1.jpg') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100%;
+  background-attachment: fixed;
+}
+.pallax2{
+  background: url('/bg-2.jpg') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100%;
+  background-attachment: fixed;
+}
+.pallax3{
+  background: url('/bg-5.jpg') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100%;
+  background-attachment: fixed;
+}
+.pallax4{
+  background: url('/bg-4.jpg') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100%;
+  background-attachment: fixed;
+}
+.pallax5{
+  background: url('/bg-7.jpg') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.parallaxinner{
+  padding: 22% 0;
+
+}
+
+@media only screen and (max-width:900px) {
+  
+  .parallaxinner{
+    padding: 40% 0;
+  
+  }
+}
+@media only screen and (max-width:550px) {
+  
+  .parallaxinner{
+    padding: 60% 0;
+  
+  }
+}
+.heading{
+  text-align: center; 
+  color: rgb(174, 103, 169);
+  font-family: var(--font-mono);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body{
+  overflow-x: hidden;
+}
